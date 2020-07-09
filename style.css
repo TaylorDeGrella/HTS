@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.body-image {
+    margin-top: 80px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+
+header {
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    font-size: 7em;
+    background-color: orange;
+    position: fixed;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: auto;
+    background-color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+
+  li {
+      font-family: 'Montserrat', sans-serif;;
+      display: inline;
+      text-align: center;
+      text-decoration: none;
+  }
+
+  a {
+    padding: 15px;
+  }
