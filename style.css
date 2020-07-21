@@ -1,117 +1,123 @@
-body {
-    height: 100%;
-    width: 100%;
-    background-image: url(images/TDbackground.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: relative;
-    opacity: .7;
+body,
+html {
+  background-image: url("images/TDbackground.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-
-header {
-    font-family: 'Julius Sans One', sans-serif;
-    text-align: center;
-    font-size: 7em;
-    background-color: orange;
-    position: fixed;
-    padding-top: 50px;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 200px;
+.header {
+  padding: 20px;
+  text-align: center;
+  background: orange;
+  color: white;
+  font-size: 30px;
 }
 
-.container {
-    display: flex;
+.header h1 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 5px;
+  font-size: 100px;
+  margin: 0;
 }
 
-.nav-container {
-    font-size: 20px;
-    position: absolute;
-    flex-direction: row;
-}
-
-.content-container {
-    flex-direction: row;
+.header p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
 }
 
 ul {
-    list-style-type: none;
-    overflow: auto;
-    background-color: orange;
-    padding-top: 10px;    
-  }
-
-  li {
-      font-family: 'Montserrat', sans-serif;;
-      display: inline;
-      text-align: center;
-      text-decoration: none;
-      padding-left: 190px;
-      padding-right: 120px;
-  }
-
-  a {
-    padding: 15px;
-    color: black;
-    text-decoration: none;
-  }
-
-  a:hover {
-      color: white;
-      font-weight: bold;
-  }
-
-.fb-container {  
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
+  position: sticky;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 20px;
+  background-color: rgb(39, 37, 35);
 }
 
-  .flip-card {
-    position: relative;
-    font-family: 'Montserrat', sans-serif; ;
-    background-color: white;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-  }
-
-  .flip-card-inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
- .flip-card:hover .flip-card-inner {
-     transform: rotateY(180deg);
-    }
-
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+li {
+  display: inline;
 }
 
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        /* -webkit-backface-visibility: hidden; Safari */
-        backface-visibility: hidden;
-      }
+li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 20%;
+  /* padding-right: 40px;
+  padding-left: 40px; */
+}
 
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
-        backface-visibility: hidden;
-      }
+.home {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Bebas Neue", cursive;
+  color: black;
+  font-size: 100px;
+}
+
+.home p {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6c665a;
+  border-radius: 25px;
+  width: 350px;
+  height: auto;
+  box-shadow: 10px 10px black;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  font-size: 15px;
+}
+
+/* Contact Flexbox */
+
+.cf {
+  display: flex;
+}
+
+.home form {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6c665a;
+  border-radius: 25px;
+  width: 300px;
+  height: auto;
+  box-shadow: 10px 10px black;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.message-field {
+  height: 50px;
+  width: 200px;
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  background-color: orange;
+  border-radius: 5%;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
