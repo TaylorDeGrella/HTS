@@ -21,19 +21,25 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- ^ For icons -->
   </head>
   <body>
     <div class="header">
       <h1>HTS</h1>
       <p>Your Expert Survival Guide</p>
     </div>
-    <div>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/packages.html">Packages</a></li>
-        <li><a href="./pages/about.html">About</a></li>
-        <li><a href="./pages/contact.html">Contact</a></li>
+    <div class="dropdown">
+      
+      <ul class="drop-links">
+        <li class="logo"><a href="#">HTS</a></li>
+        <li class="drop-link"><a href="./index.html">Home</a></li>
+        <li class="drop-link"><a href="./pages/packages.html">Packages</a></li>
+        <li class="drop-link"><a href="./pages/about.html">About</a></li>
+        <li class="drop-link"><a href="./pages/contact.html">Contact</a></li>
+        <li class="mobile-toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
       </ul>
+    
     </div>
     <div class="home">
       <h1>Home</h1>
@@ -44,5 +50,6 @@
         commodo consequat.
       </p>
     </div>
+    <script src="./js/toggle.js"></script>
   </body>
 </html>

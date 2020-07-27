@@ -22,34 +22,41 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <script src="packages.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- ^ For icons -->
   </head>
-
+  <!-- Using onload trigger to call the loadPackages() function in packages.js -->
   <body onload="loadPackages()">
     <div class="header">
       <h1>HTS</h1>
       <p>Your Expert Survival Guide</p>
     </div>
-    <div>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./packages.html">Packages</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
+    <div class="dropdown">
+      
+        <ul class="drop-links">
+          <li class="logo"><a href="#">HTS</a></li>
+          <li class="drop-link"><a href="../index.html">Home</a></li>
+          <li class="drop-link"><a href="./packages.html">Packages</a></li>
+          <li class="drop-link"><a href="./about.html">About</a></li>
+          <li class="drop-link"><a href="./contact.html">Contact</a></li>
+          <li class="mobile-toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      
     </div>
-    <div class="home">
-      <h1>Packages</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <p id="package1"></p>
-      <p id="package2"></p>
-      <p id="package3"></p>
-      <p id="package4"></p>
-    </div>
+      <div class="home-pack">
+        <h1>Packages</h1>
+        <div class="packages">
+          <p class="pack-box" id="package1"></p>
+          <p class="pack-box" id="package2"></p>
+          <p class="pack-box" id="package3"></p>
+          <p class="pack-box" id="package4"></p>
+      </div>
+      </div>
+  </div>
+  <footer>
+    <h1>See you at our next adventure!</h1>
+  </footer>
+  <script src="../js/packages.js"></script>
+  <script src="../js/toggle.js"></script>
   </body>
 </html>
