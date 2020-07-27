@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   background-image: url("images/TDbackground.jpg");
   height: 100%;
   background-position: center;
@@ -9,6 +8,7 @@ html {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 3px;
+  margin-bottom: 70px;
 }
 
 .header {
@@ -37,9 +37,11 @@ footer {
   color: white;
   background: black;
   text-align: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
+  height: 40px;
+  padding-bottom: 30px;
 }
 
 /* for the nav menu */
@@ -191,8 +193,10 @@ li a {
   font-size: 15px;
   text-align: center;
 }
+
+
 /* Media Queries*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   body, html {
     background-color: orange;
   }
@@ -204,10 +208,43 @@ li a {
   .packages {
     flex-direction: column;
   }
+
+  .cf {
+    flex-direction: column;
+  }
+
+  .home h1 {
+    font-size: 50px;
+  }
+
+  .home p {
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .home-pack h1 {
+    font-size: 50px;
+  }
+
+  .home-pack p {
+    font-size: 10px;
+  }
+
+  .home form {
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .button {
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 25px;
+  }
 }
 
-/* Desktop Media Query for screens 700px and up */
-@media all and (min-width: 700px) {
+/* Desktop Media Query for screens 601px and up */
+
+@media all and (min-width: 601px) {
   .drop-links {
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -224,4 +261,5 @@ li a {
   .mobile-toggle {
     display: none; 
   }
+
 }

@@ -7,8 +7,8 @@ packages.push(500);
 
 // load package prices into the html in order of appended (low -> high, 0 -> 3)
 function loadPackages() {
-    document.getElementById("package1").innerHTML = packages[0];
-    document.getElementById("package2").innerHTML = packages[1];
-    document.getElementById("package3").innerHTML = packages[2];
-    document.getElementById("package4").innerHTML = packages[3];
+    document.getElementById("package1").innerHTML = 'Cost: ' + packages[0];
+    document.getElementById("package2").innerHTML = 'Cost: ' + packages[1];
+    document.getElementById("package3").innerHTML = 'Cost: ' + packages[2];
+    document.getElementById("package4").innerHTML = 'Cost: ' + packages[3];
 }
