@@ -9,4 +9,16 @@ Some of the features included in this site are as follows:
 * Use of media queries between mobile and desktop.
 * Using javascript array for storing and retrieving packages data.
 
-To run the site, just download the code and double click on the index.html!
+To run the site, choose one of the following ways:
+1. With http-server (requires nodejs installed):
+    * Install the module
+    ```
+    npm install http-server -g
+    ``` 
+    * Run the server from the projects root directory
+    ```
+    http-server . -p 1337
+    ```
+    * Go to http://localhost:1337/index.html in your browser
+
+2. You can also run it by just double clicking on index.html.
