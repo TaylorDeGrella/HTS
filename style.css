@@ -301,3 +301,10 @@ li a {
   }
 
 }
+
+/* Media query that fixes the layout on contact page */
+@media only screen and (max-width: 865px) {
+  .cf {
+    flex-direction: column; 
+  }
+}
